@@ -4,7 +4,7 @@ Mystery Box
 What's that?
 ---------------
 
-A custom polymer element, for use in any frontend web development.
+A custom [polymer](http://www.polymer-project.org/) element, for use in any frontend web development.
 
 [Live Demo](http://benjamincripps.com/mysterybox)
 -------------------------------------------------

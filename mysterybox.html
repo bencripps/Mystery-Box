@@ -25,45 +25,21 @@
 			}
 
 			@keyframes slideDown {
-				0% {
-					transform: translateY(-100%);
-				}
-				50%{
-					transform: translateY(8%);
-				}
-				65%{
-					transform: translateY(-4%);
-				}
-				80%{
-					transform: translateY(4%);
-				}
-				95%{
-					transform: translateY(-2%);
-				}			
-				100% {
-					transform: translateY(0%);
-				}		
+				0% { transform: translateY(-100%); }
+				50%{ transform: translateY(8%); }
+				65%{ transform: translateY(-4%); }
+				80%{ transform: translateY(4%); }
+				95%{ transform: translateY(-2%); }			
+				100% { transform: translateY(0%); }		
 	   	}
 
 	   	@-webkit-keyframes slideDown {
-				0% {
-					-webkit-transform: translateY(-100%);
-				}
-				50%{
-					-webkit-transform: translateY(8%);
-				}
-				65%{
-					-webkit-transform: translateY(-4%);
-				}
-				80%{
-					-webkit-transform: translateY(4%);
-				}
-				95%{
-					-webkit-transform: translateY(-2%);
-				}			
-				100% {
-					-webkit-transform: translateY(0%);
-				}	
+				0% { -webkit-transform: translateY(-100%); }
+				50%{ -webkit-transform: translateY(8%); }
+				65%{ -webkit-transform: translateY(-4%); }
+				80%{ -webkit-transform: translateY(4%); }
+				95%{ -webkit-transform: translateY(-2%); }			
+				100% { -webkit-transform: translateY(0%); }	
 			}
 			
 			polyfill-next-selector { content: 'img'; }
@@ -72,10 +48,11 @@
 				width:100%;
 				height: 130px;
 				position: absolute;
-                left: 0px;
-                top: 0px;
+        left: 0px;
+        top: 0px;
 				z-index: 1;
 				pointer-events:none;
+
 			}
 			
 			polyfill-next-selector { content: 'h2'; }
@@ -88,6 +65,7 @@
 			  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 				text-decoration: none;
 			  z-index: 2;
+
 			}
 
 			polyfill-next-selector { content: 'a .cover'; }
@@ -102,6 +80,7 @@
 				top: 0px;
 				left: 0px;
 				opacity: 1;
+
 			}
 
 		
@@ -114,6 +93,7 @@
 				position: relative;
 				z-index: 1;
 				pointer-events:none;
+
 			}
 
 			polyfill-next-selector { content: 'span'; }
@@ -128,7 +108,7 @@
 				font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 				color: black;
 				font-size: 19px;
-                pointer-events: none;
+        pointer-events: none;
 
 			}
 			
@@ -150,8 +130,8 @@
 
 	Polymer('mystery-box', {
 
-		clickEvent: function( e ) {
-			alert('hi')
+		clickEvent: function( event ) {
+			alert('hi');
 		}
 
 	});
@@ -160,7 +140,7 @@
 
 	Array.prototype.slice.call(mysteryBox).forEach( function( element, index ) { 
 
-	   var cover = element.querySelector('div.cover');
+	  var cover = element.querySelector('div.cover');
 
 		element.onmouseover = function(event) { fadeIn( event, cover ) };
 
@@ -202,7 +182,7 @@
 
     	element.style.opacity = 0;
 
-    	var previousTime = +new Date();
+    	var previousTime =+ new Date();
 
     	var animate = function() {
 
